@@ -10,7 +10,7 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-        playerRb.AddForce(Vector3.up * 1000);
+        
 
         jumpInput.Enable();
     }
@@ -18,6 +18,9 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (jumpInput.triggered)
+        {
+            playerRb.AddForce(Vector3.up * 10, ForceMode.Impulse);
+        }
     }
 }
