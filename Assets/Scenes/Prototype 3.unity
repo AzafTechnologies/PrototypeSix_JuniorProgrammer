@@ -560,6 +560,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c374b399c2f16b42a16d8ea0e7056b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerMovement
+  jumpInput:
+    m_Name: Jump Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f4491e4a-976e-41f8-9e52-053ceda67b83
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: c1aa4d42-9b86-46bf-aa2e-05411a946a9d
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Jump Input
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
 --- !u!1 &2014335011
 GameObject:
   m_ObjectHideFlags: 0
